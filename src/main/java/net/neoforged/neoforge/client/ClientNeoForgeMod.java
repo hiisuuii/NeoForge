@@ -145,6 +145,11 @@ public class ClientNeoForgeMod {
             public ResourceLocation getFlowingTexture() {
                 return LAVA_FLOW;
             }
+
+            @Override
+            public int getTintColor() {
+                return 0xFFFF6000;
+            }
         }, NeoForgeMod.LAVA_TYPE.value());
 
         NeoForgeMod.MILK_TYPE.asOptional().ifPresent(milkType -> event.registerFluidType(new IClientFluidTypeExtensions() {
